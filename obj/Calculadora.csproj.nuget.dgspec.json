@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mathe\\OneDrive\\Documentos\\Estudos\\A4 - Projetos\\Calculadora\\Calculadora.csproj": {}
+    "C:\\Users\\mathe\\OneDrive\\Documentos\\Estudos\\A4 - Projetos\\Calculadora-CSharp\\Calculadora.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mathe\\OneDrive\\Documentos\\Estudos\\A4 - Projetos\\Calculadora\\Calculadora.csproj": {
+    "C:\\Users\\mathe\\OneDrive\\Documentos\\Estudos\\A4 - Projetos\\Calculadora-CSharp\\Calculadora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mathe\\OneDrive\\Documentos\\Estudos\\A4 - Projetos\\Calculadora\\Calculadora.csproj",
+        "projectUniqueName": "C:\\Users\\mathe\\OneDrive\\Documentos\\Estudos\\A4 - Projetos\\Calculadora-CSharp\\Calculadora.csproj",
         "projectName": "Calculadora",
-        "projectPath": "C:\\Users\\mathe\\OneDrive\\Documentos\\Estudos\\A4 - Projetos\\Calculadora\\Calculadora.csproj",
+        "projectPath": "C:\\Users\\mathe\\OneDrive\\Documentos\\Estudos\\A4 - Projetos\\Calculadora-CSharp\\Calculadora.csproj",
         "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mathe\\OneDrive\\Documentos\\Estudos\\A4 - Projetos\\Calculadora\\obj\\",
+        "outputPath": "C:\\Users\\mathe\\OneDrive\\Documentos\\Estudos\\A4 - Projetos\\Calculadora-CSharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config"
