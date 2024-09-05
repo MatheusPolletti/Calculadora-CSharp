@@ -5,28 +5,20 @@ Console.Title = "Calculadora";
 
 static bool Parar()
 {
-    try
-    {
-        Console.WriteLine("Você deseja parar? [S/N]");
-        string? resposta = Console.ReadLine()!.ToUpper();
+    Console.WriteLine("Você deseja parar? [S/N]");
+    string? resposta = Console.ReadLine()!.ToUpper();
 
-        if (resposta == "S")
-        {
-            return true;
-        }
-        else if (resposta == "N")
-        {
-            return false;
-        }
-        else
-        {
-            return Parar();
-        }
-    }
-    catch
+    if (resposta == "S")
     {
-        Console.WriteLine("Algo deu errado.");
+        return true;
+    }
+    else if (resposta == "N")
+    {
         return false;
+    }
+    else
+    {
+        return Parar();
     }
 }
 
@@ -121,7 +113,7 @@ class Calculadora
         try
         {
             char valorOperacao = Convert.ToChar(_operador);
-            
+
             if ("+-/*".Contains(valorOperacao))
             {
                 return true;
