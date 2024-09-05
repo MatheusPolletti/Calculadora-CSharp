@@ -6,7 +6,7 @@ Console.Title = "Calculadora";
 static bool Parar()
 {
     Console.WriteLine("Você deseja parar? [S/N]");
-    string? resposta = Console.ReadLine()!.ToUpper();
+    string? resposta = Console.ReadLine()!.ToUpper().Trim();
 
     if (resposta == "S")
     {
@@ -22,12 +22,11 @@ static bool Parar()
     }
 }
 
-int continuar = 1;
-
-while (continuar != 0)
+static void Rodar()
 {
     Console.WriteLine("Digite a operação que você deseja realizar: ( + - / * )");
-    string? operacao = Console.ReadLine();
+    string? operacao = Console.ReadLine().Trim();
+    Console.WriteLine(operacao);
 
     string[] itens_operacao = operacao.Split();
 
@@ -36,11 +35,13 @@ while (continuar != 0)
 
     bool continuar_parar = Parar();
 
-    if (continuar_parar)
+    if (!continuar_parar)
     {
-        break;
+        Rodar();
     }
 }
+
+Rodar();
 
 class Calculadora
 {
@@ -78,14 +79,17 @@ class Calculadora
         {
             return false;
         }
-        else if (verificarZero(_oper[2], _oper[1]))
-        {
-            Console.WriteLine("ERRO! Operação de divisão com 0!");
-            return false;
-        }
         else if (verificarNumero(_oper[0]) && verificarNumero(_oper[2]) && verificarOperador(_oper[1]))
         {
-            return true;
+            if (verificarZero(_oper[2], _oper[1]))
+            {
+                Console.WriteLine("ERRO! Operação de divisão com 0!");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
         else
         {
